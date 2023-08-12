@@ -13,3 +13,6 @@ For a summary of changes, see [CHANGELOG.md](https://github.com/prisms-center/CA
 Local Changes
 -------------
 - enforce sh==1.14.2 in requirements.txt
+- if err_types is not set, skip error checking in error.py
+  - SubSpaceMatrixError() was set on by default originally
+- if FreezeError is not requested, do not check in error.py
