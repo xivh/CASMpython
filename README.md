@@ -9,3 +9,7 @@ A basic online reference is located [here](https://prisms-center.github.io/CASMc
 
 
 For a summary of changes, see [CHANGELOG.md](https://github.com/prisms-center/CASMpython/blob/1.X/CHANGELOG.md).
+
+Local Changes
+-------------
+- enforce sh==1.14.2 in requirements.txt
