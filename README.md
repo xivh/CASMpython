@@ -16,3 +16,4 @@ Local Changes
 - if err_types is not set, skip error checking in error.py
   - SubSpaceMatrixError() was set on by default originally
 - if FreezeError is not requested, do not check in error.py
+- always perform a convergence check, even if volume is fixed (ISIF = 0, 1, 2)
