@@ -418,6 +418,7 @@ class VaspCalculatorBase(object):
                       pmem=settings["pmem"],
                       qos=settings["qos"],
                       queue=settings["queue"],
+                      exclude=settings["exclude"],
                       message=settings["message"],
                       email=settings["email"],
                       priority=settings["priority"],

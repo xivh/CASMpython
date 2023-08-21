@@ -17,3 +17,5 @@ Local Changes
   - SubSpaceMatrixError() was set on by default originally
 - if FreezeError is not requested, do not check in error.py
 - always perform a convergence check, even if volume is fixed (ISIF = 0, 1, 2)
+- allow exclude flag for SLURM. this may break PBS compatibility
+  - this is not implemented very well: it may be better to pass all possible settings through as a dictionary (or just use ASE/Pymatgen) rather than hardcoding them one by one in `vaspwrapper/vasp_calculator_base.submit`. it is not clear if other settings, e.g. constraint, are being passed through from CASMPython to prisms_jobs (I do not think that they are)
