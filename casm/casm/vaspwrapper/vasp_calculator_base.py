@@ -422,6 +422,7 @@ class VaspCalculatorBase(object):
                       message=settings["message"],
                       email=settings["email"],
                       priority=settings["priority"],
+                      constraint=settings["constraint"],
                       command=cmd,
                       auto=self.auto)
 

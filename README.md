@@ -21,3 +21,4 @@ Local Changes
   - this is not implemented very well: it may be better to pass all possible settings through as a dictionary (or just use ASE/Pymatgen) rather than hardcoding them one by one in `vaspwrapper/vasp_calculator_base.submit`. it is not clear if other settings, e.g. constraint, are being passed through from CASMPython to prisms_jobs (I do not think that they are)
 - if ISIF = 0, 1, 2 and the first relaxation only took one ionic step, consider the job to be converged rather than always requiring two relaxations for convergence
   - requires ISIF to be set explicitly
+- pass unused constraint flag through
