@@ -22,3 +22,4 @@ Local Changes
 - if ISIF = 0, 1, 2 and the first relaxation only took one ionic step, consider the job to be converged rather than always requiring two relaxations for convergence
   - requires ISIF to be set explicitly
 - pass unused constraint flag through
+- set --gpus flag (SLURM only). I did not update the run command for gpus, so this means that if you want to use gpus you have to pass the correct command yourself.

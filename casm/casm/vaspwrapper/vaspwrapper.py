@@ -37,6 +37,7 @@ def read_settings(filename):
         "priority": requested job priority (default "0")
         "constraint": constraint. ex: ``"haswell"`` (default None)
         "exclude": nodes to exclude (slurm only). ex: ``"node01,node02,node03"`` (default None)
+        "gpus": how many gpus to request (slurm only). ex: ``"4" (default None)
         "message": when to send messages about jobs (ex. "abe", default "a")
         "email": where to send messages (ex. "me@fake.com", default None)
         "qos": quality of service, 'qos' option (ex. "fluxoe")
@@ -79,14 +80,15 @@ def read_settings(filename):
     select_one = [["nodes", "atom_per_proc", "nodes_per_image"]]
 
     optional = [
-        "account", "pmem", "priority", "constraint", "exclude", "message", "email", "qos",
+        "account", "pmem", "priority", "constraint", "message", "email", "qos",
         "npar", "ncore", "kpar", "ncpus", "vasp_cmd", "run_limit",
         "nrg_convergence", "encut", "kpoints", "extra_input_files", "move",
         "copy", "remove", "compress", "backup", "initial", "final",
         "strict_kpoints", "err_types", "preamble", "prerun", "postrun", "prop",
         "prop_start", "prop_stop", "prop_step", "tol", "tol_amount", "name",
         "fine_ngx", "CI_neb", "n_images", "software", "method",
-        "endstate_calctype", "initial_deformation"
+        "endstate_calctype", "initial_deformation",
+        "exclude", "gpus"
     ]
 
     for key in required:

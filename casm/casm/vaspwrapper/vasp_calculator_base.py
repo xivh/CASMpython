@@ -419,6 +419,7 @@ class VaspCalculatorBase(object):
                       qos=settings["qos"],
                       queue=settings["queue"],
                       exclude=settings["exclude"],
+                      gpus=settings["gpus"],
                       message=settings["message"],
                       email=settings["email"],
                       priority=settings["priority"],
